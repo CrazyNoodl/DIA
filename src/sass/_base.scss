@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FCFCFD;
+  @include main-font;
+  font-size: $main-size;
+  font-weight: $main-weight;
+  line-height: $main-height;
+  color: $main-color;
+}

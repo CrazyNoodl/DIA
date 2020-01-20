@@ -1,0 +1,44 @@
+/* Mixins */
+@mixin main-font {
+  font-family: 'Muli', sans-serif;
+}
+
+@mixin href {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin flexsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin desktopxl {
+  @media (max-width: #{$desktopxl-max-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-max-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-max-width}) {
+    @content;
+  }
+}
+
+@mixin mobileL {
+  @media (max-width: #{$mobileL-max-width}) {
+    @content;
+  }
+}
+
+@mixin mobileS {
+  @media (max-width: #{$mobileS-max-width}) {
+    @content;
+  }
+}

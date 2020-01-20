@@ -1,0 +1,16 @@
+.form {
+
+  &__label {
+    position: relative;
+  }
+
+  &__none {
+    position: absolute;
+    z-index: -1;
+  }
+
+  &-error {
+    color: red;
+    font-size: 12px;
+  }
+}
