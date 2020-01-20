@@ -1,4 +1,5 @@
 .header {
+  background: $theme-color;
   background: linear-gradient(-245deg, #56ccf2, 78%, #fcfcfd 22%) no-repeat;
   color: $light-color;
   background-position-y: calc(100% - (#{$photo-height} / 2));
@@ -140,10 +141,9 @@
   &__photo {
     position: relative;
 
-    &>img {
+    & img {
       width: 100%;
       height: auto;
-      object-fit: cover;
     }
 
     &_text {
@@ -173,55 +173,55 @@
     }
   }
 
-  // &__arrows {
-  //   display: flex;
-  //   position: absolute;
-  //   top: 50%;
-  //   justify-content: space-between;
-  //   background-color: #FCC304;
-  //   border-radius: 50px;
-  //   padding: 20px 35px;
-  //   width: 160px;
-  //   transform: translate(-50%, -50%);
+  &__arrows {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    justify-content: space-between;
+    background-color: #FCC304;
+    border-radius: 50px;
+    padding: 20px 35px;
+    width: 160px;
+    transform: translate(-50%, -50%);
 
-  //   @include desktopxl {
-  //     top: auto;
-  //     bottom: 0;
-  //     left: 50%;
-  //     justify-content: space-between;
-  //   }
+    @include desktopxl {
+      top: auto;
+      bottom: 0;
+      left: 50%;
+      justify-content: space-between;
+    }
 
-  //   @include tablet {
-  //     display: none;
-  //   }
-  // }
+    @include tablet {
+      display: none;
+    }
+  }
 
-  // &__right,
-  // &__left {
-  //   display: block;
-  //   width: 20px;
-  //   height: 20px;
-  //   transform: rotate(45deg);
+  &__right,
+  &__left {
+    display: block;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
 
-  //   &:hover {
-  //     border-color: darken(#FCC304, 5%);
-  //     cursor: pointer;
-  //   }
+    &:hover {
+      border-color: darken(#FCC304, 5%);
+      cursor: pointer;
+    }
 
-  //   &:active {
-  //     border-color: darken(#FCC304, 5%)
-  //   }
-  // }
+    &:active {
+      border-color: darken(#FCC304, 5%)
+    }
+  }
 
-  // &__right {
-  //   border-bottom: 2px solid #fff;
-  //   border-left: 2px solid #fff;
-  // }
+  &__right {
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+  }
 
-  // &__left {
-  //   border-top: 2px solid #fff;
-  //   border-right: 2px solid #fff;
-  // }
+  &__left {
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
 
   &__social {
     display: flex;

@@ -113,6 +113,10 @@
     text-transform: uppercase;
     color: $theme-color;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__social {
