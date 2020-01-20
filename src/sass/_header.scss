@@ -47,16 +47,17 @@
   }
 
   &__link {
+    display: inline-block;
+    position: relative;
 
     &:hover::after {
       content: "";
       position: absolute;
       display: block;
       width: 100%;
-      bottom: -9px;
       left: 0px;
       height: 4px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #FCC304;
+      background: #FCC304;
       border-radius: 32px;
 
       @include mobileL {

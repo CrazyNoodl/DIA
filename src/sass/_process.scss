@@ -41,13 +41,14 @@
   }
 
   &__item {
-    width: 240px;
+    max-width: 240px;
     text-align: center;
     box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
     height: 256px;
     background-color: #fff;
     display: flex;
     justify-content: flex-end;
+    flex-basis: 240px;
     flex-direction: column;
     padding: 48px 32px;
     transition: .5s;
@@ -113,24 +114,24 @@
   @supports (display: grid) {
     &__steps {
       display: grid;
-      grid-template-columns: 240px 240px;
+      grid-template-columns: repeat(2, minmax(240px, 1fr));
       grid-template-rows: 340px 340px;
-      column-gap: 58px;
+      column-gap: 55px;
       row-gap: 18px;
 
-      @include tablet {
-        margin: 0 auto;
-        text-align: center;
+      @include mobile {
+        grid-template-rows: none;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       }
 
-      @include mobile {
+      @include mobileL {
         justify-content: center;
-        grid-template-columns: 75%;
-        grid-template-rows: repeat(4, 256px);
+        grid-template-columns: 100%;
       }
     }
 
     &__item {
+      max-width: none;
       text-align: center;
       box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
       height: 256px;
