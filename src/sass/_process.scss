@@ -38,12 +38,6 @@
       margin: 0 auto;
       text-align: center;
     }
-
-    // @include mobile {
-    //   justify-content: center;
-    //   grid-template-columns: 75%;
-    //   grid-template-rows: repeat(4, 256px);
-    // }
   }
 
   &__item {
@@ -116,53 +110,53 @@
   }
 
 
-  // @supports (display: grid) {
-  //   &__steps {
-  //     display: grid;
-  //     grid-template-columns: 240px 240px;
-  //     grid-template-rows: 340px 340px;
-  //     column-gap: 58px;
-  //     row-gap: 18px;
+  @supports (display: grid) {
+    &__steps {
+      display: grid;
+      grid-template-columns: 240px 240px;
+      grid-template-rows: 340px 340px;
+      column-gap: 58px;
+      row-gap: 18px;
 
-  //     @include tablet {
-  //       margin: 0 auto;
-  //       text-align: center;
-  //     }
+      @include tablet {
+        margin: 0 auto;
+        text-align: center;
+      }
 
-  //     @include mobile {
-  //       justify-content: center;
-  //       grid-template-columns: 75%;
-  //       grid-template-rows: repeat(4, 256px);
-  //     }
-  //   }
+      @include mobile {
+        justify-content: center;
+        grid-template-columns: 75%;
+        grid-template-rows: repeat(4, 256px);
+      }
+    }
 
-  //   &__item {
-  //     text-align: center;
-  //     box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
-  //     height: 256px;
-  //     background-color: #fff;
-  //     display: flex;
-  //     justify-content: flex-end;
-  //     flex-direction: column;
-  //     padding: 48px 32px;
-  //     transition: .5s;
+    &__item {
+      text-align: center;
+      box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
+      height: 256px;
+      background-color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      padding: 48px 32px;
+      transition: .5s;
 
-  //     &:nth-child(2n+1) {
-  //       align-self: flex-end;
-  //     }
+      &:nth-child(2n+1) {
+        align-self: flex-end;
+      }
 
-  //     &:hover {
-  //       border-radius: 15%;
-  //       box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
-  //     }
+      &:hover {
+        border-radius: 15%;
+        box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
+      }
 
-  //     @include mobile {
-  //       &:nth-child(2n+1) {
-  //         align-self: flex-start;
-  //       }
-  //     }
-  //   }
-  // }
+      @include mobile {
+        &:nth-child(2n+1) {
+          align-self: flex-start;
+        }
+      }
+    }
+  }
 
   &__description {
     font-size: 13px;
