@@ -33,7 +33,7 @@
   &-testemonials {
     @include flexsb;
 
-    @include mobile {
+    @include tablet {
       flex-wrap: wrap;
       justify-content: center;
     }
