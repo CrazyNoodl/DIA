@@ -2,12 +2,23 @@
   background-color: $section-color;
   padding: 160px 0;
 
-  // @include tablet {
-  //   padding: 100px 0;
-  // }
+  @include tablet {
+    padding: 100px 0;
+  }
 
-  @include mobileL {
+  @include mobile {
     padding: 60px 0;
+  }
+
+  &--header {
+
+    @include tablet {
+      padding: 0;
+    }
+
+    @include mobile {
+      padding: 0;
+    }
   }
 
   &-light {

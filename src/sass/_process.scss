@@ -55,10 +55,15 @@
     z-index: 3;
     margin: 0 auto;
     margin-bottom: 10px;
+    border: 1px solid #eceaea;
 
     &:hover {
       border-radius: 15%;
       box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    &:focus {
+      border: 2px solid grey;
     }
   }
 
@@ -109,7 +114,6 @@
       }
     }
   }
-
 
   @supports (display: grid) {
     &__steps {

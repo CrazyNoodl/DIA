@@ -27,6 +27,11 @@
 
     @include mobile {
       width: max-content;
+      text-align: right;
+    }
+
+    @include mobileL {
+      text-align: center;
     }
   }
 
@@ -39,7 +44,7 @@
     }
 
     @include mobileL {
-      margin-bottom: 25px;
+      display: none;
     }
   }
 }

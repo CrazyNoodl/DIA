@@ -29,6 +29,12 @@
       color: darken(#eee, 3%);
     }
 
+    &--black {
 
+      &:hover {
+        color: black;
+        text-decoration: underline;
+      }
+    }
   }
 }
